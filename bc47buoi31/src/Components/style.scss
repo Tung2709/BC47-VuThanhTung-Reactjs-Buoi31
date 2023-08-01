@@ -1,0 +1,60 @@
+.container-fluid{
+	position: relative;
+	height: 100%;
+	&::before {    
+		content: "";
+		background-image: url("../../public/glassesImage//background.jpg");
+		background-size: cover;
+		position: absolute;
+		top: 0px;
+		right: 0px;
+		bottom: 0px;
+		left: 0px;
+		opacity: 0.5;}
+	
+	.row{
+		position: relative;
+		.col-6{
+			.glassInfo{
+				background-color: rgba(128, 128, 128, 0.493);
+				width: 300px;
+				position: absolute;
+				top: 200px;
+				right: 188px;
+				h2{
+					font-size: 20px;
+					margin: 0;
+				}
+				p{
+					margin: 0;
+				}
+			}
+			img{
+				height: 300px;
+				width: 300px;
+				&.glassModel{
+				position: absolute;
+				top: 70px;
+				right: 266px;
+				width: 150px;
+				height: 50px;
+				}
+			}
+		}
+		&.wrap{
+			width: 90%;
+			margin-top: 20px!important;
+			.col-2{
+				img{
+					height: 150px;
+					width: 150px;	
+					cursor: pointer;
+				}
+			}
+		}
+	}
+}
+
+html,body,.App,#root{
+	height: 100%;
+}
